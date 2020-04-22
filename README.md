@@ -1,6 +1,6 @@
 # GeoServices Ruby Library
 
-This library is a simple wrapper around the GeoServices API. You can see the [GeoServices REST Specification](http://www.esri.com/industries/landing-pages/geoservices/geoservices) or the [Getting Started](https://services.arcgis.com/help/index.html?overview.html)
+This library is a simple wrapper around the GeoServices API. You can see the [GeoServices REST Specification](https://developers.arcgis.com/rest/) or the [Getting Started](https://developers.arcgis.com/rest/services-reference/get-started-with-the-services-directory.htm)
 
 If you have not worked with GeoServices before, there are a few basic concepts to get started:
 
@@ -58,7 +58,7 @@ puts query["features"]
 
 ### Testing
 
-geoservices-ruby uses RSpec for tests. 
+geoservices-ruby uses RSpec for tests.
 
     $ rake rspec
 
@@ -68,8 +68,8 @@ geoservices-ruby uses RSpec for tests.
 
 ## Resources
 
-* [GeoServices REST Specification](http://www.esri.com/industries/landing-pages/geoservices/geoservices)
-* [GeoServices Getting Started](https://services.arcgis.com/help/index.html?overview.html)
+* [GeoServices REST Specification](https://developers.arcgis.com/rest/)
+* [GeoServices Getting Started](https://developers.arcgis.com/rest/services-reference/get-started-with-the-services-directory.htm)
 
 ## Licensing
 Licensed under the Apache License, Version 2.0 (the "License");
