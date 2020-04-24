@@ -1,4 +1,5 @@
 require 'json'
+require 'logger'
 require 'net/http'
 module Geoservice
   module Base
@@ -28,6 +29,8 @@ module Geoservice
       path.gsub!(/%username%/,@username || "")
       uri = URI.parse(path)
       http = Net::HTTP.new(uri.host, secure ? 443 : uri.port)
+      log = Logger.new(STDOUT)
+      http.set_debug_output(log)
       if(secure || uri.scheme == "https")
         http.use_ssl = true
         http.ssl_version = :TLSv1_2
